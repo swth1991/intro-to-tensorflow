@@ -1,5 +1,6 @@
 #%%
 import hashlib
+#%%
 import os
 import pickle
 from urllib.request import urlretrieve
@@ -12,9 +13,10 @@ from sklearn.utils import resample
 from tqdm import tqdm
 from zipfile import ZipFile
 
-print("All modules imported")
-"""
+os.chdir("/home/jhkim/src/vscode/machine-learning/intro-to-tensorflow")
+
 #%%
+
 def download(url, file):
     if not os.path.isfile(file):
         print("Downloading " + file + ".....")
@@ -125,7 +127,6 @@ if not os.path.isfile(pickle_file):
         raise
 
 print('Data cached in pickle file.')
-"""
 #%%
 
 import pickle
